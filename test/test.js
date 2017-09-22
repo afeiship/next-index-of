@@ -4,16 +4,12 @@ require('../src/next-index-of');
 
 describe('next/indexOf', function () {
 
-  it('nx.mix', function () {
-    var obj1 = {name: 'fei'};
-    var obj2 = {email: '1290657123@qq.com'};
+  it('nx indexof', function () {
+    var arr1 =  [1,2,3,4];
 
-    var result = {};
+    var idx = nx.indexOf(arr1, 2);
 
-    nx.mix(result, obj1, obj2);
-
-    assert.equal(result.name, obj1.name);
-    assert.equal(result.email, obj2.email);
+    assert.equal(1, idx);
   });
 
 });
